@@ -9,10 +9,17 @@
     "lint:check": "next lint",
     "prepare": "husky"
   },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
+      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
+      "post-applypatch": "echo \"[Husky] post-applypatch\"",
+      "pre-commit": "echo \"[Husky] pre-commit\""
+    }
+  },
   "dependencies": {
     "@commitlint/config-conventional": "^19.1.0",
     "eslint-config-next": "13.4.4",
-    "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "next": "14.1.4",
     "react": "^18",
@@ -22,6 +29,7 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8.9.0",
     "eslint-config-next": "14.1.4",
+    "husky": "^9.0.11",
     "postcss": "^8",
     "prettier": "^2.5.1",
     "tailwindcss": "^3.3.0"
