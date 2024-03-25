@@ -1,9 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "lint-staged",
-    "pre-push": "npm test"
-  },
-  "env": {
-    "HUSKY_GIT_PARAMS": "0"
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   }
 }
