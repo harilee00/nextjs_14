@@ -1,20 +1,10 @@
 {
-
-
-
-
-
-
-
-
-
-
-
-
-  
   "name": "nextjs-docker",
+  
   "version": "0.1.0",
+
   "private": true,
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -44,6 +34,10 @@
     "tailwindcss": "^3.3.0"
   },
   "lint-staged": {
-    "*.ts": ["tslint", "prettier --write", "git add"]
+    "*.ts": [
+      "tslint",
+      "prettier --write",
+      "git add"
+    ]
   }
 }
